@@ -2,6 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
 const app = express();
+const port = 1108
 
 app.use(helmet());
 app.set('views', path.join(__dirname, 'views'));
@@ -48,4 +49,4 @@ switch (n){
         res.render('index', {time: message})
 })
 
-app.listen(3000, console.log('RUNNING!'))
+app.listen(port, console.log('RUNNING!'))
