@@ -7,6 +7,19 @@
     <title>Is it weekend yet? - Asthriona</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Boring Twitter stuff card and shit :c if you read this, please help me I'm stuck coding dumb shit :c -->
+    <% if(time === ""){%>
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@Asthriona">
+        <meta name="twitter:title" content="Is this week end yet?">
+        <meta name="twitter:description" content="<%= time %>">
+        <meta name="twitter:image" content="https://asthriona.s3.fr-par.scw.cloud/img/2020/11/ezgif-2-05c507770c08.gif">
+    <%}else{%>
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@Asthriona">
+        <meta name="twitter:title" content="Is this week end yet?">
+        <meta name="twitter:description" content="<%= time %>">
+    <%}%>
 </head>
 
 <body>
